@@ -2,7 +2,7 @@
 layout: post
 title: Doc2Vec to Clustering
 date: 2021-01-01 16:20:23 +0900
-category: Doc2Vec Clustering K-means
+categories: Doc2Vec Clustering
 ---
 
 Doc2Vec 을 이용한 Clustering

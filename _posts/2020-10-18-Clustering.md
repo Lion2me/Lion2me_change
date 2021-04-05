@@ -2,7 +2,7 @@
 layout: post
 title: Document Clustering using Kmeans
 date: 2020-10-18 19:20:23 +0900
-category: Clustering Kmeans
+category: Clustering
 ---
 
 Document Clustering ( 문서 군집화 )
