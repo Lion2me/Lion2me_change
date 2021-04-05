@@ -24,7 +24,7 @@ Markov Model를 저는 **현재의 상태는 이전의 상태로부터 어느정
 
 이전의 결과가 다음의 결과에 영향을 주는 모델을 Markov Model이라고 합니다. 단순 확률로 설명하면 다음과 같이 설명 할 수 있습니다.
 
-![ex_screenshot](/assets/img/post_img/marcov1.png)
+![ex_screenshot](/public/img/marcov1.png)
 
 각 그림은 구름이 끼는 날, 해가 보이는 날, 비가 오는 날로 구분 된 정해진 확률분포입니다.
 
@@ -44,7 +44,7 @@ $$0.7 * 0.7 = 0.49$$
 
 HMM은 쉽게 말하면 이전 관측값을 모르는(보여지지 않은) Marcov Model입니다. 이전의 관측값을 모르기 때문에 다음의 그림을 해석하는 방법은 조금 달라집니다.
 
-![ex_screenshot](/assets/img/post_img/marcov1.png)
+![ex_screenshot](/public/img/marcov1.png)
 
 어제의 날씨를 모를 때 우리는 오늘의 날씨의 확률을 구하고자 한다면 어떻게 구할 수 있을까요?
 
