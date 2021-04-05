@@ -52,7 +52,7 @@ Word2Vec을 간단히 말하면 **'주변 단어들이 비슷한 형태를 띄�
 
 주변 단어를 이용하여 해당 단어를 얻는 방법, 즉 Word2Vec을 사용하는 방법으로 2가지 방식이 있었습니다. 한가지는 Cbow와 다른 하나는 Skip-gram 방식이였습니다.
 
-![ex_screenshot](/assets/img/post_img/Word2Vec.png)
+![ex_screenshot](/public/img/Word2Vec.png)
 
 -	CBOW 방식은 주변 단어를 Input으로 해당 단어를 Output으로 작동하는데 이해하기 쉽게 주변단어의 벡터의 위치와 근접하게 해당 단어의 벡터를 옮긴다고 생각하면 됩니다. 예시에서 설명한 개와 고양이로 예시를 들면 **['의자','앉','사료','먹는']** 의 방향으로 **['개']** 의 벡터를 옮기고 마찬가지로 **['고양이']** 벡터를 옮기면 두 벡터는 비슷한 방향으로 이동하기 때문에 **['개'] 벡터와 ['고양이'] 벡터는 가까이에 위치하며 이 결과를 우리는 개와 고양이는 유사성이 있다.** 로 받아들입니다.
 
@@ -86,7 +86,7 @@ Word2Vec은 중심단어를 기반으로 WindowSize 만큼 주변 단어를 탐�
 
 가장 먼저 Distributed Memory 방식이 있습니다.
 
-![ex_screenshot](/assets/img/post_img/DM.png)
+![ex_screenshot](/public/img/DM.png)
 
 위의 그림에서 등장하는 Document id( = Paragraph id )에 주목할 필요가 있습니다. 이 값으로 얻어내는 벡터가 바로 Document 벡터입니다.
 
@@ -94,15 +94,15 @@ Word2Vec은 중심단어를 기반으로 WindowSize 만큼 주변 단어를 탐�
 
 그렇게 되면 다음과 같은 그림이 됩니다.
 
-![ex_screenshot](/assets/img/post_img/Doc2Vec-DM.png)
+![ex_screenshot](/public/img/Doc2Vec-DM.png)
 
 순차적으로 이와 같은 계산을 하게 되면 단어들과 Document id 벡터의 연관성이 생기게 되며 Word2Vec과 마찬가지로 여러 문장들에서 많이 나온 단어들에 대해서는 여러 Document로 끌려가는 성질이 있기 때문에 벡터가 멀어지는 효과도 있습니다. 물론 negative Sampling이 필요할 것 같긴 하지만 말입니다.
 
-![ex_screenshot](/assets/img/post_img/DBOW.png)
+![ex_screenshot](/public/img/DBOW.png)
 
 DBOW의 경우에는 저도 지금 공부하는 중입니다. 정확히 모르지만 제가 이해하는 내용을 그림으로 설명해보도록 하겠습니다.
 
-![ex_screenshot](/assets/img/post_img/Doc2Vec-DBOW.png)
+![ex_screenshot](/public/img/Doc2Vec-DBOW.png)
 
 이 경우 문서에 대한 벡터를 얻을 수 있지만 단어들간의 유사한 정도가 유지되는지 잘 모르겠습니다. 더 공부해서 이해해보도록 하겠습니다.
 
@@ -235,9 +235,9 @@ f.close()
 
 각 document를 해당 document의 인덱스로 id값을 부여했습니다.
 
-![ex_screenshot](/assets/img/post_img/taggedDocument1.png)
+![ex_screenshot](/public/img/taggedDocument1.png)
 
-![ex_screenshot](/assets/img/post_img/taggedDocument2.png)
+![ex_screenshot](/public/img/taggedDocument2.png)
 
 그 결과는 위처럼 각 document에 등장한 단어들이 각 인덱스로 tagging 된 것을 확인할 수 있습니다. 그 결과를 이용하여 doc2Vec을 사용하면 됩니다.
 

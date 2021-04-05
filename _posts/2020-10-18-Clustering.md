@@ -180,19 +180,19 @@ Ball cut은 그러한 고차원상의 k-means++를 대체할 방법으로 설명
 
 첫 번째로 initialize를 진행합니다.
 
-![ex_screenshot](/assets/img/post_img/cluster_init1.png)
+![ex_screenshot](/public/img/cluster_init1.png)
 
 위의 그림에서 검은 점으로 표시된 데이터 중 파랑, 빨강, 초록색으로 표시 된 점이 바로 Random initialize한 점입니다. 그리고 해당 점을 통해 가장 가까운 데이터를 표시하면 이 부분이 첫번째 과정인 k개의 Representation Point를 정하는 곳이고, 다음 단계로 이 점들과 가장 가까운 데이터들을 표시하면 다음과 같은 그림이 나옵니다.
 
-![ex_screenshot](/assets/img/post_img/cluster1.png)
+![ex_screenshot](/public/img/cluster1.png)
 
 빨간색이 가장 큰 면적을 차지고하고 있군요, 2차원 공간으로 확인하니 initialize의 중요성을 확실하게 알 수 있습니다. 그리고 같은 군집에 있는 데이터들의 평균으로 Representation Point를 바꿔가며 2-4번 까지의 과정을 3번 거치면 Representation Point는 다음과 같이 바뀝니다.
 
-![ex_screenshot](/assets/img/post_img/cluster_init2.png)
+![ex_screenshot](/public/img/cluster_init2.png)
 
 첫 initialize와 비교하면 파란점과 초록점은 점차 가운데로 모여드는 느낌으로 이동하고, 빨간색은 조금 중앙에서 멀어집니다.
 
-![ex_screenshot](/assets/img/post_img/cluster2.png)
+![ex_screenshot](/public/img/cluster2.png)
 
 처음 그림보다 데이터들은 어느정도 편파적인 성향이 사라짐을 볼 수 있습니다. 그리고 이러한 변화는 어느정도의 반복에서 수렴하게 됩니다. 즉 더 이상 Representation Point의 변화가 없어지며 벡터는 수렴하여 움직이지 않게 됩니다. 그때, K-means는 멈추게 됩니다. 비록 Representation이 완벽하게 수렴하지 않더라도 K-means 알고리즘에서는 max_iter라는 파라미터를 이용하여 몇 번 반복할 것인지 정할 수 있습니다.
 
