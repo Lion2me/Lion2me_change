@@ -207,3 +207,7 @@ Ball cut은 그러한 고차원상의 k-means++를 대체할 방법으로 설명
 -	https://lovit.github.io/nlp/machine%20learning/2018/10/16/spherical_kmeans/
 
 -	Anna Huang. Similarity measures for text document clustering. In Proceedings of the sixth new zealand computer science research 20 student conference (NZCSRSC2008), Christchurch, New Zealand, pages 49–56, 2008
+
+<script type="text/javascript"
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
