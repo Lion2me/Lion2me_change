@@ -200,3 +200,7 @@ $$y_i = Target\_Truth$$ $$\hat y_i = Target\_Predict$$ $$Loss = - y_ilog(\hat y_
 -	http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
 -	https://dreamgonfly.github.io/blog/word2vec-explained/
 -	https://arxiv.org/abs/1411.2738
+
+<script type="text/javascript"
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
