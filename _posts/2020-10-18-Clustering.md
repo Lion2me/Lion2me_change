@@ -111,9 +111,9 @@ $$D_{KL}(P|Q)=\sum_iP(i)\log {\frac {P(i)}{Q(i)}}$$
 
 **확률분포 P를 기준으로 분포를 Q로 대체했을 때 얼마나 정보량의 차이가 있는가** 에 대한 공식입니다. 여기서 2가지의 문제가 생깁니다.
 
-\\( D_ {KL}(P\text{\textbar}Q) \\\) 와 \\( D_ {KL}(Q\text{\textbar}P) \\) 는 다르지만 우리는 두 분포의 차이를 명확한 값을 구해야합니다.
+$$$D_ {KL}(P\text{\textbar}Q)$$$과 $$$D_ {KL}(Q\text{\textbar}P))$$$ 두 값은 다르지만 우리는 두 분포의 차이를 명확한 값을 구해야합니다.
 
-\\( D_ {KL}(P\text{\textbar}Q) \\) 의 공식 중 \\( log(P(i))\over{log(Q(i))} \\) 에서 \\( log(Q(i)) \\) 가 0의 값을 가지면 inf(무한대)의 값을 가집니다. 즉 BagOfWords에서 해당 단어가 없을 경우, 분모가 0이 되며, 해당 분포의 차이는 무한대로 확정됩니다.
+$$$D_ {KL}(P\text{\textbar}Q)$$$ 의 공식 중 $$$log(P(i))\over{log(Q(i))}$$$ 에서 $$$log(Q(i))$$$ 가 0의 값을 가지면 inf(무한대)의 값을 가집니다. 즉 BagOfWords에서 해당 단어가 없을 경우, 분모가 0이 되며, 해당 분포의 차이는 무한대로 확정됩니다.
 
 여기서 제가 선택한 방법은 다음과 같습니다.
 
@@ -170,7 +170,7 @@ k-means++는 거리를 기반으로 다음 초기값의 확률분포를 만드�
 
 ##### Ball cut
 
-Ball cut은 그러한 고차원상의 k-means++를 대체할 방법으로 설명되어 있었습니다. 파라미터 \(t\)를 설정하고 한 점을 선택할 때 거리가 \(t\) 이하인 점을 전부 삭제하는 방식으로 진행됩니다. 그렇게 벡터 공간이 비거나 혹은 k개의 군집을 만들게 되면 초기화를 끝내고 혹시나 벡터 공간이 k개의 군집을 선택하기 전에 비어버린다면 선택되지 않은 모든 점들 중 랜덤으로 초기화를 하는 방식입니다.
+Ball cut은 그러한 고차원상의 k-means++를 대체할 방법으로 설명되어 있었습니다. 파라미터 $$$t$$$를 설정하고 한 점을 선택할 때 거리가 $$$t$$$ 이하인 점을 전부 삭제하는 방식으로 진행됩니다. 그렇게 벡터 공간이 비거나 혹은 k개의 군집을 만들게 되면 초기화를 끝내고 혹시나 벡터 공간이 k개의 군집을 선택하기 전에 비어버린다면 선택되지 않은 모든 점들 중 랜덤으로 초기화를 하는 방식입니다.
 
 ---
 
@@ -207,3 +207,7 @@ Ball cut은 그러한 고차원상의 k-means++를 대체할 방법으로 설명
 -	https://lovit.github.io/nlp/machine%20learning/2018/10/16/spherical_kmeans/
 
 -	Anna Huang. Similarity measures for text document clustering. In Proceedings of the sixth new zealand computer science research 20 student conference (NZCSRSC2008), Christchurch, New Zealand, pages 49–56, 2008
+
+<script type="text/javascript"
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>

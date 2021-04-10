@@ -10,7 +10,7 @@ Sequential Models
 
 ---
 
-Sequential Models에서 Sequential한 데이터를 다룰 때 주로 사용되는 3가지의 모델에 대해 공부해보겠습니다. 그 3가지는 바로 **Hidden Markov Model, Maximum Entropy Markov Model, Conditional Random Field** 입니다.
+Sequential Models에서 Sequential한 데이터를 다룰 때 주로 사용되는 3가지의 모델에 대해 공부해보겠습니다. 그 3가지는 바로 **Markov Model, Hidden Markov Model, Maximum Entropy Model,  Maximum Entropy Markov Model, Conditional Random Field** 입니다.
 
 ### 1. Markov Model
 
@@ -122,7 +122,7 @@ HMM은 쉽게 말하면 이전 관측값을 모르는(보여지지 않은) Marco
 
 예를 들면 내일 어떤 날씨일까? 라는 문제를 해결할 수 있습니다. 모든 식을 적기에는 상당히 오래 걸리므로 간단히 말하면 이전의 공식을 전체 확률로 확대시킨 뒤 가장 높은 확률을 골라내면 끝납니다.
 
-**중요한 점은 HMM의 과정을 거쳐서 나온 값들은 모두 덧셈을 사용한다는 점입니다. 따라서 연산이 많아지면서 값이 0으로 수렴하는 에러가 발생하지 않으며 연산은 훨씬 가볍습니다.**
+**중요한 점은 HMM의 과정을 거쳐서 나온 값들은 덧셈을 사용한다는 점입니다. 따라서 곱셈 연산이 많아지면서 값이 0으로 수렴하는 에러가 발생하지 않으며 연산은 훨씬 가볍습니다.**
 
 HMM의 연산은 무척이나 많지만 Dynamic Programming 기법을 사용하여 연산을 최적화하는 방식을 채택함으로써 충분히 연산가능한 수준으로 사용할 수 있습니다.
 
@@ -136,11 +136,11 @@ $$= argmax_ {T} \prod_ {i} {P(W_ {i} | T_ {i})} \prod_ {i} {P(T_ {i} | T_ {i-1})
 
 위에서부터
 
-1.	우리가 구하고 싶은 값은 Sequential한 데이터 W가 입력되었을 때 관측값 $\hat T$를 알고 싶습니다. 그러기 위해 우리는 가장 확률이 높은 T를 구하고자 합니다.
+1.	우리가 구하고 싶은 값은 Sequential한 데이터 W가 입력되었을 때 관측값 $$$\hat T$$$를 알고 싶습니다. 그러기 위해 우리는 가장 확률이 높은 T를 구하고자 합니다.
 
-2.	Marcov 모델을 생각하면 이전의 관측값을 기반으로 $T$일 확률과 그 확률에서 $W$값의 확률을 구하는 공식으로 변환할 수 있죠. 이전의 관측값 $T$가 구하고자 하는 결과에 영향을 끼치니까요
+2.	Marcov 모델을 생각하면 이전의 관측값을 기반으로 $$$T$$$일 확률과 그 확률에서 $$$W$$$값의 확률을 구하는 공식으로 변환할 수 있죠. 이전의 관측값 $$$T$$$가 구하고자 하는 결과에 영향을 끼치니까요
 
-3.	그래서 이전의 T의 확률을 $T_ {i-1}$을 기반으로 $T_ {i}$의 확률을 구하는 공식과 $T_ {i}$를 기반으로 $W_ {i}$를 구하는 공식을 합치면 $\hat T$를 구할 수 있음을 알 수 있습니다.
+3.	그래서 이전의 T의 확률을 $$$T_ {i-1}$$$을 기반으로 $$$T_ {i}$$$의 확률을 구하는 공식과 $$$T_ {i}$$$를 기반으로 $$$W_ {i}$$$를 구하는 공식을 합치면 $$$\hat T$$$를 구할 수 있음을 알 수 있습니다.
 
 ### 3. Maximum Entropy Model
 
@@ -158,7 +158,7 @@ $$f(x_ {yesterday} , x_ {today}) = \frac {1} {1 + e^ {\hat h} }$$
 
 $$P(x_ {i}) = \frac{f(x_ {i-2}, x_ {i-1})} {\sum_ {i=1} ^ {n} {f({x_ {i-2}, x_ {i-1})}}}$$
 
-식이 조금 바뀐 것 같지만 Sequential 데이터에서 \( i = 내일의 날씨 \) 로 가정하고 어제의 날씨와 오늘의 날씨를 i를 기반으로 나타냈을 때 위와 같은 식이 됩니다.
+식이 조금 바뀐 것 같지만 Sequential 데이터에서 $$$i = 내일의 날씨$$$ 로 가정하고 어제의 날씨와 오늘의 날씨를 i를 기반으로 나타냈을 때 위와 같은 식이 됩니다.
 
 이전의 관측값을 기반으로 다음의 관측값을 예측하는 모델이라면 이렇듯 다중 로지스틱 회귀로도 가능합니다. 이러한 방식에서 장점은 엔지니어의 지식에 따라 다양한 파라미터를 추가할 수 있다는 점 입니다.
 
@@ -174,7 +174,7 @@ $$\hat T = argmax_ {T}\ P(T|W)$$
 
 $$= argmax_ {T} \prod {P(T_ {i}|W_ {i},T_ {i-1})}$$
 
-위의 식을 풀이하면 **$\hat T$ 상태는 $W_ {i}$와 $T_ {i-1}$ 일 경우의 $T_ {i}$ 곱의 최대 값이다.** 라고 말할 수 있습니다.
+위의 식을 풀이하면 **$$$\hat T$$$ 상태는 $$$W_ {i}$$$와 $$$T_ {i-1}$$$ 일 경우의 $$$T_ {i}$$$ 곱의 최대 값이다.** 라고 말할 수 있습니다.
 
 여기서 \\( P(T_ {i}|W_ {i},T_ {i-1}) \\) 를 Maximum Entropy Model로 나타내면 됩니다.
 
@@ -193,3 +193,7 @@ https://ratsgo.github.io/machine%20learning/2017/11/04/MEMMs/
 https://untitledtblog.tistory.com/97
 
 https://ratsgo.github.io/machine%20learning/2017/03/18/HMMs/
+
+<script type="text/javascript"
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
