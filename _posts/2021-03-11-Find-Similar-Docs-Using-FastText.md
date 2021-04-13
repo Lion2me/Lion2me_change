@@ -107,7 +107,11 @@ def get_document_vector(self,text):
 
 그럼 한번 도전해보겠습니다.
 
-[ KNN 성공 이미지 ]
+![ex_screenshot](/public/img/KNNSource.png)
+![ex_screenshot](/public/img/SimWords.png)
+![ex_screenshot](/public/img/KNNEX3.png)
+![ex_screenshot](/public/img/KNNEX2.png)
+![ex_screenshot](/public/img/KNNEX1.png)
 
 다음과 같이 성공적으로 찾아낼 수 있었습니다.
 
