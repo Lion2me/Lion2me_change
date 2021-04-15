@@ -1,9 +1,14 @@
 ---
 
-layout: post title: Finding Similar Docs Using Fasttext date: 2021-03-11 19:20:23 +0900
+layout: post
+
+title: Finding Similar Docs Using Fasttext
+
+date: 2021-03-11 19:20:23 +0900
 
 categories: FastText KNN Similarity
------------------------------------
+
+---
 
 FastText 모델을 이용한 유사한 Document 찾기
 -------------------------------------------
