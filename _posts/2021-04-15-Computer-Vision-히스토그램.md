@@ -2,7 +2,7 @@
 
 layout: post
 
-title: [교과과정 - 컴퓨터비전] Histogram
+title: 컴퓨터비전 Histogram - 
 
 date: 2021-04-15 21:05:23 +0900
 
