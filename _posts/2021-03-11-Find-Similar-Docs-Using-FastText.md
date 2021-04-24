@@ -112,7 +112,11 @@ def get_document_vector(self,text):
 
 그럼 한번 도전해보겠습니다.
 
-[ KNN 성공 이미지 ]
+![ex_screenshot](/public/img/KNNSource.png)
+![ex_screenshot](/public/img/SimWords.png)
+![ex_screenshot](/public/img/KNNEX3.png)
+![ex_screenshot](/public/img/KNNEX2.png)
+![ex_screenshot](/public/img/KNNEX1.png)
 
 다음과 같이 성공적으로 찾아낼 수 있었습니다.
 
@@ -153,6 +157,21 @@ KNN을 이용하면 비슷한 문장을 찾아 낼 수 있습니다. 하지만 �
 **단어가 하나의 0차원 값이 아닌 1차원의 벡터로 표현 할 수 있는 기법**
 
 이 두 특징을 이용하여 찾고자 하는 문장의 단어들과 찾을 대상의 문장의 단어들의 거리를 비교하여 가장 가까운 값을 선택하면 유사한 문장을 찾을 수 있지 않을까? 라는 아이디어로 만들어보았습니다.
+
+```python
+def get_similar_key_docs(self,X,Y,N=10,dist_func = 'cosine'):
+    #아래의 공식의 값을 max_heap에 넣으면 됨 maxheap의 크기는 N을 입력받고 ㄱㄱ
+    #np.min(fd2v.get_similar_key_docs(input_,'ㅊㅓㅇㄴㅕㄴㅇㅡㄴ ㅇㅓㄷㅣㅇㅔㅅㅓ ㅇㅣㄹㅎㅏㄴㅏㅇㅛ'), axis=1).sum()
+    heap = []
+    for idx,text in enumerate(Y):
+        dist = np.min(pairwise_distances(self.get_word_vectors(X),self.get_word_vectors(text),metric = dist_func),axis=1).sum()
+        if(len(heap) < N):
+            heapq.heappush(heap,(-dist,dist,idx))
+        elif(dist < heap[0][1]):
+            heapq.heappop(heap)
+            heapq.heappush(heap,(-dist,dist,idx))
+    return heap
+```
 
 출처
 
