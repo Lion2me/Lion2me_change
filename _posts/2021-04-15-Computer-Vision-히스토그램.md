@@ -2,7 +2,7 @@
 layout: post
 title: Computer Vision Histogram
 date: 2021-04-15 21:05:23 +0900
-categories: Vision Histogram
+categories: Vision
 ---
 
 교과과정 중 컴퓨터비전 강의를 듣고 배운 내용에 대한 정리입니다.
