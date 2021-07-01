@@ -2,7 +2,7 @@
 layout: post
 title: MacOS 에서 Mecab 설정하기
 date: 2021-03-03 19:20:23 +0900
-category: POS
+category: TextAnalysis
 ---
 
 
