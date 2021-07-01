@@ -2,7 +2,7 @@
 layout: post
 title: FastText Using SubWord
 date: 2021-03-05 19:20:23 +0900
-categories: FastText Embedding
+categories: TextAnalysis
 ---
 
 SubWord를 이용한 FastText 학습
