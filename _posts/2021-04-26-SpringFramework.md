@@ -6,7 +6,7 @@ title: Spring Framework
 
 date: 2021-04-26 21:05:23 +0900
 
-categories: Spring
+categories: BE
 
 ---
 
