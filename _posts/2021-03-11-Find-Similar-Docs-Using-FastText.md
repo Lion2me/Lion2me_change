@@ -6,7 +6,7 @@ title: Finding Similar Docs Using Fasttext
 
 date: 2021-03-11 19:20:23 +0900
 
-categories: FastText KNN Similarity
+categories: TextAnalysis
 
 ---
 
