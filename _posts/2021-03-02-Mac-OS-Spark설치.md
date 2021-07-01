@@ -83,7 +83,7 @@ Transformation을 순차적으로 쌓아놓습니다. 자료구조로 생각하�
 
 Mac에서 Spark를 쉽게 다운로드 받기 위해서는 brew를 사용하는게 가장 쉽습니다.
 
-![ex_screenshot](./post_img/Spark-cmd.png)
+![ex_screenshot](./public/img/Spark-cmd.png)
 
 ```
 brew install apache-spark
@@ -105,6 +105,6 @@ export PYSPARK_DRIVER_PYTHON_OPTS='notebook'
 
 다음의 과정을 거치고 cmd를 통해 pyspark에 접근하면 성공적으로 jupyter notebook을 통해 spark를 사용 할 수 있습니다.
 
-![ex_screenshot](./post_img/Spark-Jupyter.png)
+![ex_screenshot](./public/img/Spark-Jupyter.png)
 
 포스트 추가
