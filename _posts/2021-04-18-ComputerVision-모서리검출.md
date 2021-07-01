@@ -6,7 +6,7 @@ title: Computer Vision CornerDetection
 
 date: 2021-04-18 21:05:23 +0900
 
-categories: Vision CornerDetection
+categories: Vision
 
 ---
 
