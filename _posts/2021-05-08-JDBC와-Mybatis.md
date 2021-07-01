@@ -6,7 +6,7 @@ title: Spring JDBC와 Mybatis
 
 date: 2021-05-08 21:05:23 +0900
 
-categories: Spring
+categories: BE
 
 ---
 
