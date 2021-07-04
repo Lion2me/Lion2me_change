@@ -33,7 +33,7 @@ Komoran / Kkma / Twit(Otk) / Mecab을 한번 비교해보겠습니다.
 
 "형태소 분석기를 테스트해보기 위해 다음과 같은 문장을 준비했다. 문장이 짧을 수 있으므로 이 문장을 추가적으로 덧붙였다." 이 문장을 각각의 형태소 분석기를 이용해 Tagging 해 보겠습니다.
 
-![ex_screenshot](./post_img/pos_tag.png)
+![ex_screenshot](/public/img/pos_tag.png)
 
 주목할 점은 "했"을 분석해보았을 때 Mecab은 [했, XSV+EP] 와 같이 단어를 파괴하지 않고 분석하며 다른 곳에서는 [하,앗[었],다] 처럼 나누어 분석하는 것을 볼 수 있습니다. 또한 Okt는 동사라는 큰 단위[했다]로 묶기도 합니다.
 
