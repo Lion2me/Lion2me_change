@@ -52,7 +52,7 @@ Map 과정이 끝난 데이터는 각각 Combiner를 거쳐가며 키를 기준�
 
 그러면 각 리듀스에는 해당하는 키 값들이 전부 모이게 됩니다. 예를 들면 "장난감"이라는 단어의 hash값도 2이고 "아기"의 hash값이 2라면 키 값이 장난감과 아기인 값은 모두 2번 리듀서에 들어오게 됩니다. 리듀서에서 그 키 값을 기준으로 정렬하면 각각의 키 값에 대한 모든 요소를 순차적으로 접근 할 수 있게 되었죠.
 
-리듀스는 일반적으로 return 이라고 생각하면 됩니다. output이 일어난 것이죠.
+리듀스는 일반적으로 return 되는 값을 연산하는 작업이라고 생각하면 됩니다. 맵 과정을 통해 모은 데이터를 기반으로 연산을 진행 한 뒤 결과를 Output시켜주는 과정입니다.
 
 #### 1 - 3) Spark
 
@@ -83,7 +83,7 @@ Transformation을 순차적으로 쌓아놓습니다. 자료구조로 생각하�
 
 Mac에서 Spark를 쉽게 다운로드 받기 위해서는 brew를 사용하는게 가장 쉽습니다.
 
-![ex_screenshot](./public/img/Spark-cmd.png)
+![ex_screenshot](/public/img/Spark-cmd.png)
 
 ```
 brew install apache-spark
@@ -105,6 +105,6 @@ export PYSPARK_DRIVER_PYTHON_OPTS='notebook'
 
 다음의 과정을 거치고 cmd를 통해 pyspark에 접근하면 성공적으로 jupyter notebook을 통해 spark를 사용 할 수 있습니다.
 
-![ex_screenshot](./public/img/Spark-Jupyter.png)
+![ex_screenshot](/public/img/Spark-Jupyter.png)
 
 포스트 추가
