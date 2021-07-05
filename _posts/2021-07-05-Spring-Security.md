@@ -71,11 +71,11 @@ categories: Spring
 
 3. AuthenticationManager에서 등록되어있는 Provider 중 해당 토큰의 정보로 True가 나오는 요소가 있는지 탐색합니다.
 
-3-1. Provider는 UserDatailsService를 통해서 가지고 있는 유저의 아이디를 기반으로 해당 사용자 정보를 불러옵니다.
+  3-1. Provider는 UserDatailsService를 통해서 가지고 있는 유저의 아이디를 기반으로 해당 사용자 정보를 불러옵니다.
 
-3-2. 불러온 유저의 정보 중 비밀번호가 토큰에 저장 된 비밀번호와 일치하는지 확인 과정을 거칩니다.
+  3-2. 불러온 유저의 정보 중 비밀번호가 토큰에 저장 된 비밀번호와 일치하는지 확인 과정을 거칩니다.
 
-3-3. 일치한다면 가져온 토큰에 Authenticate 메서드를 통해 인증이 된 토큰임을 표시합니다.
+  3-3. 일치한다면 가져온 토큰에 Authenticate 메서드를 통해 인증이 된 토큰임을 표시합니다.
 
 4. AuthenticationFilter는 인증이 된 토큰이라면 SecurityContext 내의 세션에 저장합니다.
 
