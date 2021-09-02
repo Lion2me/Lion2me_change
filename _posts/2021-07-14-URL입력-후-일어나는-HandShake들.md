@@ -27,7 +27,7 @@ URL입력 후 일어나는 일들에 대한 포스팅의 2탄입니다.
 
 먼저 TCP 헤더에 대해서 간단히 훑어보겠습니다.
 
-[TCP 헤더 그림]
+<img src="/public/img/tcp-header.png" width="800" height="400">
 
 1. 송신자 포트번호와 수신자 포트번호가 입력됩니다.
 2. Sequence Number는 현재 세그먼트의 시작번호(byte 단위로)로써 이 값을 이용하여 신뢰성과 흐름제어를 보장합니다.
@@ -45,7 +45,7 @@ TCP 과정을 거치면서 여기 TCP 헤더에 있는 Flag부분에 비트 단�
 
 본격적으로 Handshake에 대해 공부해보겠습니다.
 
-[TCP Handshake 그림]
+<img src="/public/img/tcp-handshake.png" width="800" height="400">
 
 **첫 번째로 3-Way-Handshake는 클라이언트와 서버가 통신을 하기 전 서로를 확인하는 절차입니다.** TCP프로토콜의 특성 상 신뢰성있고 연결형 통신을 지원하기 때문에 통신을 하기 전 클라이언트와 서버가 연결되는 루트를 찾아야 합니다.
 
