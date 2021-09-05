@@ -2,7 +2,7 @@
 layout: post
 title: Sequential Models
 date: 2020-12-20 19:20:23 +0900
-category: DataAnalysis
+category: ML
 ---
 
 Sequential Models
