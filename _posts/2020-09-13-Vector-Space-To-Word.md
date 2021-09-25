@@ -1,12 +1,14 @@
-
 ---
+
 layout: post
 title: Vector Space To Word Analysis
 date: 2020-09-13 19:20:23 +0900
-category: TextAnalysis
+category: NLP
+
 ---
+
 Vector Space To Word Analysis
-=============================
+---
 
 데이터 분석을 진행할 때 데이터의 표현방식에 대한 공부가 중요하다는 생각으로 첫 포스팅을 텍스트 분석 시 word의 vectorize 방식으로 시작하게 되었습니다.
 
