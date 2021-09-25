@@ -1,12 +1,9 @@
 ---
 
 layout: post
-
 title: ORM과 SQLMapper
-
 date: 2021-08-20 21:05:23 +0900
-
-categories: Spring
+category: Spring
 
 ---
 

@@ -1,12 +1,9 @@
 ---
 
 layout: post
-
 title: URL에 접근 시 일어나는 Handshake
-
 date: 2021-07-14 21:05:23 +0900
-
-categories: Basic
+category: Basic
 
 ---
 
