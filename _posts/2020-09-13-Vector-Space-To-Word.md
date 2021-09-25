@@ -1,10 +1,8 @@
 ---
-
 layout: post
 title: Vector Space To Word Analysis
 date: 2020-09-13 19:20:23 +0900
 category: NLP
-
 ---
 
 Vector Space To Word Analysis
